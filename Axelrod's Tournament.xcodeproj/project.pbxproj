@@ -1,0 +1,776 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8B0D930F190E588E003B2AFA /* GameRoundTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0D930D190E588E003B2AFA /* GameRoundTableViewCell.m */; };
+		8B0D9310190E588E003B2AFA /* GameRoundTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B0D930E190E588E003B2AFA /* GameRoundTableViewCell.xib */; };
+		8B3B9B0B191126D800342CE1 /* InspectCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B3B9B09191126D800342CE1 /* InspectCellTableViewCell.m */; };
+		8B3B9B0C191126D800342CE1 /* InspectCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B3B9B0A191126D800342CE1 /* InspectCellTableViewCell.xib */; };
+		8B3B9B1019114E9300342CE1 /* ResultPopUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B3B9B0F19114E9300342CE1 /* ResultPopUpViewController.m */; };
+		8B509F6318F08968001D8F3F /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B509F6218F08968001D8F3F /* Game.m */; };
+		8B592267190578FC00B61273 /* MPCHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B592266190578FC00B61273 /* MPCHandler.m */; };
+		8B5C6560190442E90064154D /* IndividualGameReviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5C655F190442E90064154D /* IndividualGameReviewViewController.m */; };
+		8B7E794218FC6505001D6C0C /* MStrategy+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7E794118FC6505001D6C0C /* MStrategy+Category.m */; };
+		8B7E795E18FD405C001D6C0C /* MRule+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7E795D18FD405C001D6C0C /* MRule+Category.m */; };
+		8B91FDCE18FA9F2F0018F15A /* StrategyModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8B91FDCC18FA9F2F0018F15A /* StrategyModel.xcdatamodeld */; };
+		8B91FDD818FAAA1A0018F15A /* MRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B91FDD718FAAA1A0018F15A /* MRule.m */; };
+		8B91FDDB18FAAA1B0018F15A /* MStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B91FDDA18FAAA1B0018F15A /* MStrategy.m */; };
+		8B99A7F719092DA20078BE96 /* MultiPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B99A7F619092DA20078BE96 /* MultiPlayerViewController.m */; };
+		8B99A7FC190A83800078BE96 /* UIButton+Gradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B99A7FB190A83800078BE96 /* UIButton+Gradient.m */; };
+		8B9A2A0F18F98C310058266D /* Rule.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9A2A0E18F98C310058266D /* Rule.m */; };
+		8B9A2A1218F9B79A0058266D /* UIView+DrawRectBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9A2A1118F9B79A0058266D /* UIView+DrawRectBlock.m */; };
+		8BA44A2018F025EA000F04AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BA44A1F18F025EA000F04AD /* Foundation.framework */; };
+		8BA44A2218F025EA000F04AD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BA44A2118F025EA000F04AD /* CoreGraphics.framework */; };
+		8BA44A2418F025EA000F04AD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BA44A2318F025EA000F04AD /* UIKit.framework */; };
+		8BA44A2A18F025EA000F04AD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8BA44A2818F025EA000F04AD /* InfoPlist.strings */; };
+		8BA44A2C18F025EA000F04AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA44A2B18F025EA000F04AD /* main.m */; };
+		8BA44A3018F025EA000F04AD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA44A2F18F025EA000F04AD /* AppDelegate.m */; };
+		8BA44A3318F025EA000F04AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BA44A3118F025EA000F04AD /* Main.storyboard */; };
+		8BA44A3618F025EA000F04AD /* EditStrategyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA44A3518F025EA000F04AD /* EditStrategyViewController.m */; };
+		8BA44A3818F025EA000F04AD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BA44A3718F025EA000F04AD /* Images.xcassets */; };
+		8BA44A3F18F025EA000F04AD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BA44A3E18F025EA000F04AD /* XCTest.framework */; };
+		8BA44A4018F025EA000F04AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BA44A1F18F025EA000F04AD /* Foundation.framework */; };
+		8BA44A4118F025EA000F04AD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BA44A2318F025EA000F04AD /* UIKit.framework */; };
+		8BA44A5A18F03F30000F04AD /* Prisoner.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA44A5918F03F30000F04AD /* Prisoner.m */; };
+		8BA44A5F18F04D3D000F04AD /* NSString+toNSArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA44A5E18F04D3D000F04AD /* NSString+toNSArray.m */; };
+		8BB8E23018F6E1DE00799E5E /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB8E22F18F6E1DE00799E5E /* WelcomeViewController.m */; };
+		8BC3389718F320EB000CF043 /* EditRuleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC3389618F320EB000CF043 /* EditRuleViewController.m */; };
+		8BC3389A18F3210B000CF043 /* EditRuleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC3389918F3210B000CF043 /* EditRuleView.m */; };
+		8BE593B118FDA1450063D7BD /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8BE593B018FDA1450063D7BD /* Settings.bundle */; };
+		8BE593B418FEAC480063D7BD /* WelcomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE593B318FEAC480063D7BD /* WelcomeView.m */; };
+		8BE593B718FEC1330063D7BD /* DefineLocalTournamentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE593B618FEC1330063D7BD /* DefineLocalTournamentViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8BA44A4218F025EA000F04AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BA44A1418F025EA000F04AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8BA44A1B18F025EA000F04AD;
+			remoteInfo = "Axelrod's Tournament";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8B0D930C190E588E003B2AFA /* GameRoundTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameRoundTableViewCell.h; path = "Axelrod's Tournament/GameRoundTableViewCell.h"; sourceTree = "<group>"; };
+		8B0D930D190E588E003B2AFA /* GameRoundTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameRoundTableViewCell.m; path = "Axelrod's Tournament/GameRoundTableViewCell.m"; sourceTree = "<group>"; };
+		8B0D930E190E588E003B2AFA /* GameRoundTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GameRoundTableViewCell.xib; path = "Axelrod's Tournament/GameRoundTableViewCell.xib"; sourceTree = "<group>"; };
+		8B3B9B08191126D800342CE1 /* InspectCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InspectCellTableViewCell.h; path = "Axelrod's Tournament/InspectCellTableViewCell.h"; sourceTree = "<group>"; };
+		8B3B9B09191126D800342CE1 /* InspectCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InspectCellTableViewCell.m; path = "Axelrod's Tournament/InspectCellTableViewCell.m"; sourceTree = "<group>"; };
+		8B3B9B0A191126D800342CE1 /* InspectCellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = InspectCellTableViewCell.xib; path = "Axelrod's Tournament/InspectCellTableViewCell.xib"; sourceTree = "<group>"; };
+		8B3B9B0E19114E9300342CE1 /* ResultPopUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultPopUpViewController.h; sourceTree = "<group>"; };
+		8B3B9B0F19114E9300342CE1 /* ResultPopUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultPopUpViewController.m; sourceTree = "<group>"; };
+		8B509F6118F08968001D8F3F /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		8B509F6218F08968001D8F3F /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
+		8B592265190578FC00B61273 /* MPCHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPCHandler.h; sourceTree = "<group>"; };
+		8B592266190578FC00B61273 /* MPCHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPCHandler.m; sourceTree = "<group>"; };
+		8B5C655E190442E90064154D /* IndividualGameReviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndividualGameReviewViewController.h; sourceTree = "<group>"; };
+		8B5C655F190442E90064154D /* IndividualGameReviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndividualGameReviewViewController.m; sourceTree = "<group>"; };
+		8B7E794018FC6505001D6C0C /* MStrategy+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MStrategy+Category.h"; sourceTree = "<group>"; };
+		8B7E794118FC6505001D6C0C /* MStrategy+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MStrategy+Category.m"; sourceTree = "<group>"; };
+		8B7E795C18FD405C001D6C0C /* MRule+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MRule+Category.h"; sourceTree = "<group>"; };
+		8B7E795D18FD405C001D6C0C /* MRule+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MRule+Category.m"; sourceTree = "<group>"; };
+		8B91FDCD18FA9F2F0018F15A /* StrategyModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StrategyModel.xcdatamodel; sourceTree = "<group>"; };
+		8B91FDD618FAAA1A0018F15A /* MRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRule.h; sourceTree = "<group>"; };
+		8B91FDD718FAAA1A0018F15A /* MRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRule.m; sourceTree = "<group>"; };
+		8B91FDD918FAAA1B0018F15A /* MStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MStrategy.h; sourceTree = "<group>"; };
+		8B91FDDA18FAAA1B0018F15A /* MStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MStrategy.m; sourceTree = "<group>"; };
+		8B99A7F519092DA20078BE96 /* MultiPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiPlayerViewController.h; sourceTree = "<group>"; };
+		8B99A7F619092DA20078BE96 /* MultiPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiPlayerViewController.m; sourceTree = "<group>"; };
+		8B99A7FA190A83800078BE96 /* UIButton+Gradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Gradient.h"; sourceTree = "<group>"; };
+		8B99A7FB190A83800078BE96 /* UIButton+Gradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Gradient.m"; sourceTree = "<group>"; };
+		8B9A2A0D18F98C310058266D /* Rule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rule.h; sourceTree = "<group>"; };
+		8B9A2A0E18F98C310058266D /* Rule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Rule.m; sourceTree = "<group>"; };
+		8B9A2A1018F9B79A0058266D /* UIView+DrawRectBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DrawRectBlock.h"; sourceTree = "<group>"; };
+		8B9A2A1118F9B79A0058266D /* UIView+DrawRectBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DrawRectBlock.m"; sourceTree = "<group>"; };
+		8BA44A1C18F025EA000F04AD /* Axelrod's Tournament.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Axelrod's Tournament.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BA44A1F18F025EA000F04AD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8BA44A2118F025EA000F04AD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8BA44A2318F025EA000F04AD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8BA44A2718F025EA000F04AD /* Axelrod's Tournament-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Axelrod's Tournament-Info.plist"; sourceTree = "<group>"; };
+		8BA44A2918F025EA000F04AD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8BA44A2B18F025EA000F04AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8BA44A2D18F025EA000F04AD /* Axelrod's Tournament-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Axelrod's Tournament-Prefix.pch"; sourceTree = "<group>"; };
+		8BA44A2E18F025EA000F04AD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8BA44A2F18F025EA000F04AD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8BA44A3218F025EA000F04AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8BA44A3418F025EA000F04AD /* EditStrategyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EditStrategyViewController.h; sourceTree = "<group>"; };
+		8BA44A3518F025EA000F04AD /* EditStrategyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EditStrategyViewController.m; sourceTree = "<group>"; };
+		8BA44A3718F025EA000F04AD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8BA44A3D18F025EA000F04AD /* Axelrod's TournamentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Axelrod's TournamentTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BA44A3E18F025EA000F04AD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		8BA44A5818F03F30000F04AD /* Prisoner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prisoner.h; sourceTree = "<group>"; };
+		8BA44A5918F03F30000F04AD /* Prisoner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Prisoner.m; sourceTree = "<group>"; };
+		8BA44A5C18F04BBE000F04AD /* Definitions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Definitions.h; sourceTree = "<group>"; };
+		8BA44A5D18F04D3D000F04AD /* NSString+toNSArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+toNSArray.h"; sourceTree = "<group>"; };
+		8BA44A5E18F04D3D000F04AD /* NSString+toNSArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+toNSArray.m"; sourceTree = "<group>"; };
+		8BB8E22E18F6E1DE00799E5E /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
+		8BB8E22F18F6E1DE00799E5E /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
+		8BC3389518F320EB000CF043 /* EditRuleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditRuleViewController.h; sourceTree = "<group>"; };
+		8BC3389618F320EB000CF043 /* EditRuleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditRuleViewController.m; sourceTree = "<group>"; };
+		8BC3389818F3210B000CF043 /* EditRuleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditRuleView.h; sourceTree = "<group>"; };
+		8BC3389918F3210B000CF043 /* EditRuleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditRuleView.m; sourceTree = "<group>"; };
+		8BE593B018FDA1450063D7BD /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		8BE593B218FEAC480063D7BD /* WelcomeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeView.h; sourceTree = "<group>"; };
+		8BE593B318FEAC480063D7BD /* WelcomeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeView.m; sourceTree = "<group>"; };
+		8BE593B518FEC1330063D7BD /* DefineLocalTournamentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefineLocalTournamentViewController.h; sourceTree = "<group>"; };
+		8BE593B618FEC1330063D7BD /* DefineLocalTournamentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefineLocalTournamentViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8BA44A1918F025EA000F04AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BA44A2218F025EA000F04AD /* CoreGraphics.framework in Frameworks */,
+				8BA44A2418F025EA000F04AD /* UIKit.framework in Frameworks */,
+				8BA44A2018F025EA000F04AD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BA44A3A18F025EA000F04AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BA44A3F18F025EA000F04AD /* XCTest.framework in Frameworks */,
+				8BA44A4118F025EA000F04AD /* UIKit.framework in Frameworks */,
+				8BA44A4018F025EA000F04AD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8B0D930A190E582E003B2AFA /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8B3B9B07191126B000342CE1 /* Inspect Cell */,
+				8B0D930B190E584E003B2AFA /* Round Cell */,
+			);
+			name = "Custom Cells";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		8B0D930B190E584E003B2AFA /* Round Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8B0D930C190E588E003B2AFA /* GameRoundTableViewCell.h */,
+				8B0D930D190E588E003B2AFA /* GameRoundTableViewCell.m */,
+				8B0D930E190E588E003B2AFA /* GameRoundTableViewCell.xib */,
+			);
+			name = "Round Cell";
+			sourceTree = "<group>";
+		};
+		8B3B9B07191126B000342CE1 /* Inspect Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8B3B9B08191126D800342CE1 /* InspectCellTableViewCell.h */,
+				8B3B9B09191126D800342CE1 /* InspectCellTableViewCell.m */,
+				8B3B9B0A191126D800342CE1 /* InspectCellTableViewCell.xib */,
+			);
+			name = "Inspect Cell";
+			sourceTree = "<group>";
+		};
+		8B3B9B0D19114E7400342CE1 /* Result-popup */ = {
+			isa = PBXGroup;
+			children = (
+				8B3B9B0E19114E9300342CE1 /* ResultPopUpViewController.h */,
+				8B3B9B0F19114E9300342CE1 /* ResultPopUpViewController.m */,
+			);
+			name = "Result-popup";
+			sourceTree = "<group>";
+		};
+		8B509F6418F08A92001D8F3F /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				8B509F6118F08968001D8F3F /* Game.h */,
+				8B509F6218F08968001D8F3F /* Game.m */,
+			);
+			name = Game;
+			sourceTree = "<group>";
+		};
+		8B5922681905790100B61273 /* MPC */ = {
+			isa = PBXGroup;
+			children = (
+				8B592265190578FC00B61273 /* MPCHandler.h */,
+				8B592266190578FC00B61273 /* MPCHandler.m */,
+			);
+			name = MPC;
+			sourceTree = "<group>";
+		};
+		8B5C6561190442EF0064154D /* Individual Game Inspector */ = {
+			isa = PBXGroup;
+			children = (
+				8B5C655E190442E90064154D /* IndividualGameReviewViewController.h */,
+				8B5C655F190442E90064154D /* IndividualGameReviewViewController.m */,
+			);
+			name = "Individual Game Inspector";
+			sourceTree = "<group>";
+		};
+		8B7BD1C318F5637B0095BD12 /* Rule */ = {
+			isa = PBXGroup;
+			children = (
+				8B9A2A0D18F98C310058266D /* Rule.h */,
+				8B9A2A0E18F98C310058266D /* Rule.m */,
+			);
+			name = Rule;
+			sourceTree = "<group>";
+		};
+		8B7E794318FC6516001D6C0C /* MStrategy */ = {
+			isa = PBXGroup;
+			children = (
+				8B7E794018FC6505001D6C0C /* MStrategy+Category.h */,
+				8B7E794118FC6505001D6C0C /* MStrategy+Category.m */,
+			);
+			name = MStrategy;
+			sourceTree = "<group>";
+		};
+		8B7E795F18FD4062001D6C0C /* MRule */ = {
+			isa = PBXGroup;
+			children = (
+				8B7E795C18FD405C001D6C0C /* MRule+Category.h */,
+				8B7E795D18FD405C001D6C0C /* MRule+Category.m */,
+			);
+			name = MRule;
+			sourceTree = "<group>";
+		};
+		8B7E796018FD9397001D6C0C /* Edit Strategy */ = {
+			isa = PBXGroup;
+			children = (
+				8BA44A3418F025EA000F04AD /* EditStrategyViewController.h */,
+				8BA44A3518F025EA000F04AD /* EditStrategyViewController.m */,
+			);
+			name = "Edit Strategy";
+			sourceTree = "<group>";
+		};
+		8B91FDCF18FAA89B0018F15A /* Strategy Model (manged) */ = {
+			isa = PBXGroup;
+			children = (
+				8B91FDCC18FA9F2F0018F15A /* StrategyModel.xcdatamodeld */,
+				8B91FDD618FAAA1A0018F15A /* MRule.h */,
+				8B91FDD718FAAA1A0018F15A /* MRule.m */,
+				8B91FDD918FAAA1B0018F15A /* MStrategy.h */,
+				8B91FDDA18FAAA1B0018F15A /* MStrategy.m */,
+			);
+			name = "Strategy Model (manged)";
+			sourceTree = "<group>";
+		};
+		8B99A7F819092DA80078BE96 /* Multiplayer */ = {
+			isa = PBXGroup;
+			children = (
+				8B99A7F519092DA20078BE96 /* MultiPlayerViewController.h */,
+				8B99A7F619092DA20078BE96 /* MultiPlayerViewController.m */,
+			);
+			name = Multiplayer;
+			sourceTree = "<group>";
+		};
+		8B99A7F9190A835B0078BE96 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				8B99A7FA190A83800078BE96 /* UIButton+Gradient.h */,
+				8B99A7FB190A83800078BE96 /* UIButton+Gradient.m */,
+			);
+			name = Button;
+			sourceTree = "<group>";
+		};
+		8B9A2A1318F9B7A00058266D /* DrawRectBlock */ = {
+			isa = PBXGroup;
+			children = (
+				8B9A2A1018F9B79A0058266D /* UIView+DrawRectBlock.h */,
+				8B9A2A1118F9B79A0058266D /* UIView+DrawRectBlock.m */,
+			);
+			name = DrawRectBlock;
+			sourceTree = "<group>";
+		};
+		8B9A2A1418F9B7B60058266D /* NSString to NSArray of NSSting */ = {
+			isa = PBXGroup;
+			children = (
+				8BA44A5D18F04D3D000F04AD /* NSString+toNSArray.h */,
+				8BA44A5E18F04D3D000F04AD /* NSString+toNSArray.m */,
+			);
+			name = "NSString to NSArray of NSSting";
+			sourceTree = "<group>";
+		};
+		8BA44A1318F025EA000F04AD = {
+			isa = PBXGroup;
+			children = (
+				8BA44A2518F025EA000F04AD /* Axelrod's Tournament */,
+				8BA44A1E18F025EA000F04AD /* Frameworks */,
+				8BA44A1D18F025EA000F04AD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8BA44A1D18F025EA000F04AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8BA44A1C18F025EA000F04AD /* Axelrod's Tournament.app */,
+				8BA44A3D18F025EA000F04AD /* Axelrod's TournamentTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8BA44A1E18F025EA000F04AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8BA44A1F18F025EA000F04AD /* Foundation.framework */,
+				8BA44A2118F025EA000F04AD /* CoreGraphics.framework */,
+				8BA44A2318F025EA000F04AD /* UIKit.framework */,
+				8BA44A3E18F025EA000F04AD /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8BA44A2518F025EA000F04AD /* Axelrod's Tournament */ = {
+			isa = PBXGroup;
+			children = (
+				8B3B9B0D19114E7400342CE1 /* Result-popup */,
+				8B0D930A190E582E003B2AFA /* Custom Cells */,
+				8B5C6561190442EF0064154D /* Individual Game Inspector */,
+				8BE593B818FEC14C0063D7BD /* Local Tournament */,
+				8B91FDCF18FAA89B0018F15A /* Strategy Model (manged) */,
+				8B7BD1C318F5637B0095BD12 /* Rule */,
+				8BC3389418F320BA000CF043 /* Edit Rule */,
+				8BA44A2E18F025EA000F04AD /* AppDelegate.h */,
+				8BA44A2F18F025EA000F04AD /* AppDelegate.m */,
+				8BA44A3118F025EA000F04AD /* Main.storyboard */,
+				8BB8E23118F6E1E400799E5E /* Welcome Screen */,
+				8B7E796018FD9397001D6C0C /* Edit Strategy */,
+				8B509F6418F08A92001D8F3F /* Game */,
+				8BA44A5B18F03F36000F04AD /* Prisoner (not used) */,
+				8BA44A3718F025EA000F04AD /* Images.xcassets */,
+				8BA44A6018F04D74000F04AD /* Categories */,
+				8BA44A2618F025EA000F04AD /* Supporting Files */,
+				8B99A7F819092DA80078BE96 /* Multiplayer */,
+				8B5922681905790100B61273 /* MPC */,
+			);
+			path = "Axelrod's Tournament";
+			sourceTree = "<group>";
+		};
+		8BA44A2618F025EA000F04AD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8BE593B018FDA1450063D7BD /* Settings.bundle */,
+				8BA44A5C18F04BBE000F04AD /* Definitions.h */,
+				8BA44A2718F025EA000F04AD /* Axelrod's Tournament-Info.plist */,
+				8BA44A2818F025EA000F04AD /* InfoPlist.strings */,
+				8BA44A2B18F025EA000F04AD /* main.m */,
+				8BA44A2D18F025EA000F04AD /* Axelrod's Tournament-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8BA44A5B18F03F36000F04AD /* Prisoner (not used) */ = {
+			isa = PBXGroup;
+			children = (
+				8BA44A5818F03F30000F04AD /* Prisoner.h */,
+				8BA44A5918F03F30000F04AD /* Prisoner.m */,
+			);
+			name = "Prisoner (not used)";
+			sourceTree = "<group>";
+		};
+		8BA44A6018F04D74000F04AD /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				8B99A7F9190A835B0078BE96 /* Button */,
+				8B7E795F18FD4062001D6C0C /* MRule */,
+				8B7E794318FC6516001D6C0C /* MStrategy */,
+				8B9A2A1418F9B7B60058266D /* NSString to NSArray of NSSting */,
+				8B9A2A1318F9B7A00058266D /* DrawRectBlock */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		8BB8E23118F6E1E400799E5E /* Welcome Screen */ = {
+			isa = PBXGroup;
+			children = (
+				8BB8E22E18F6E1DE00799E5E /* WelcomeViewController.h */,
+				8BB8E22F18F6E1DE00799E5E /* WelcomeViewController.m */,
+				8BE593B218FEAC480063D7BD /* WelcomeView.h */,
+				8BE593B318FEAC480063D7BD /* WelcomeView.m */,
+			);
+			name = "Welcome Screen";
+			sourceTree = "<group>";
+		};
+		8BC3389418F320BA000CF043 /* Edit Rule */ = {
+			isa = PBXGroup;
+			children = (
+				8BC3389518F320EB000CF043 /* EditRuleViewController.h */,
+				8BC3389618F320EB000CF043 /* EditRuleViewController.m */,
+				8BC3389818F3210B000CF043 /* EditRuleView.h */,
+				8BC3389918F3210B000CF043 /* EditRuleView.m */,
+			);
+			name = "Edit Rule";
+			sourceTree = "<group>";
+		};
+		8BE593B818FEC14C0063D7BD /* Local Tournament */ = {
+			isa = PBXGroup;
+			children = (
+				8BE593B518FEC1330063D7BD /* DefineLocalTournamentViewController.h */,
+				8BE593B618FEC1330063D7BD /* DefineLocalTournamentViewController.m */,
+			);
+			name = "Local Tournament";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8BA44A1B18F025EA000F04AD /* Axelrod's Tournament */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BA44A4E18F025EA000F04AD /* Build configuration list for PBXNativeTarget "Axelrod's Tournament" */;
+			buildPhases = (
+				8BA44A1818F025EA000F04AD /* Sources */,
+				8BA44A1918F025EA000F04AD /* Frameworks */,
+				8BA44A1A18F025EA000F04AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Axelrod's Tournament";
+			productName = "Axelrod's Tournament";
+			productReference = 8BA44A1C18F025EA000F04AD /* Axelrod's Tournament.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8BA44A3C18F025EA000F04AD /* Axelrod's TournamentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BA44A5118F025EA000F04AD /* Build configuration list for PBXNativeTarget "Axelrod's TournamentTests" */;
+			buildPhases = (
+				8BA44A3918F025EA000F04AD /* Sources */,
+				8BA44A3A18F025EA000F04AD /* Frameworks */,
+				8BA44A3B18F025EA000F04AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8BA44A4318F025EA000F04AD /* PBXTargetDependency */,
+			);
+			name = "Axelrod's TournamentTests";
+			productName = "Axelrod's TournamentTests";
+			productReference = 8BA44A3D18F025EA000F04AD /* Axelrod's TournamentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8BA44A1418F025EA000F04AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Elliot Adderton";
+				TargetAttributes = {
+					8BA44A1B18F025EA000F04AD = {
+						DevelopmentTeam = 923CWAH3CT;
+					};
+					8BA44A3C18F025EA000F04AD = {
+						TestTargetID = 8BA44A1B18F025EA000F04AD;
+					};
+				};
+			};
+			buildConfigurationList = 8BA44A1718F025EA000F04AD /* Build configuration list for PBXProject "Axelrod's Tournament" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8BA44A1318F025EA000F04AD;
+			productRefGroup = 8BA44A1D18F025EA000F04AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8BA44A1B18F025EA000F04AD /* Axelrod's Tournament */,
+				8BA44A3C18F025EA000F04AD /* Axelrod's TournamentTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8BA44A1A18F025EA000F04AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B3B9B0C191126D800342CE1 /* InspectCellTableViewCell.xib in Resources */,
+				8BE593B118FDA1450063D7BD /* Settings.bundle in Resources */,
+				8B0D9310190E588E003B2AFA /* GameRoundTableViewCell.xib in Resources */,
+				8BA44A3818F025EA000F04AD /* Images.xcassets in Resources */,
+				8BA44A2A18F025EA000F04AD /* InfoPlist.strings in Resources */,
+				8BA44A3318F025EA000F04AD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BA44A3B18F025EA000F04AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8BA44A1818F025EA000F04AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BA44A3618F025EA000F04AD /* EditStrategyViewController.m in Sources */,
+				8BA44A5F18F04D3D000F04AD /* NSString+toNSArray.m in Sources */,
+				8BE593B718FEC1330063D7BD /* DefineLocalTournamentViewController.m in Sources */,
+				8BB8E23018F6E1DE00799E5E /* WelcomeViewController.m in Sources */,
+				8B3B9B1019114E9300342CE1 /* ResultPopUpViewController.m in Sources */,
+				8B99A7F719092DA20078BE96 /* MultiPlayerViewController.m in Sources */,
+				8B9A2A1218F9B79A0058266D /* UIView+DrawRectBlock.m in Sources */,
+				8BA44A5A18F03F30000F04AD /* Prisoner.m in Sources */,
+				8BC3389718F320EB000CF043 /* EditRuleViewController.m in Sources */,
+				8BE593B418FEAC480063D7BD /* WelcomeView.m in Sources */,
+				8B99A7FC190A83800078BE96 /* UIButton+Gradient.m in Sources */,
+				8B91FDDB18FAAA1B0018F15A /* MStrategy.m in Sources */,
+				8B592267190578FC00B61273 /* MPCHandler.m in Sources */,
+				8B9A2A0F18F98C310058266D /* Rule.m in Sources */,
+				8B509F6318F08968001D8F3F /* Game.m in Sources */,
+				8B7E795E18FD405C001D6C0C /* MRule+Category.m in Sources */,
+				8B0D930F190E588E003B2AFA /* GameRoundTableViewCell.m in Sources */,
+				8B5C6560190442E90064154D /* IndividualGameReviewViewController.m in Sources */,
+				8BA44A3018F025EA000F04AD /* AppDelegate.m in Sources */,
+				8BC3389A18F3210B000CF043 /* EditRuleView.m in Sources */,
+				8B91FDCE18FA9F2F0018F15A /* StrategyModel.xcdatamodeld in Sources */,
+				8B7E794218FC6505001D6C0C /* MStrategy+Category.m in Sources */,
+				8BA44A2C18F025EA000F04AD /* main.m in Sources */,
+				8B3B9B0B191126D800342CE1 /* InspectCellTableViewCell.m in Sources */,
+				8B91FDD818FAAA1A0018F15A /* MRule.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BA44A3918F025EA000F04AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8BA44A4318F025EA000F04AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8BA44A1B18F025EA000F04AD /* Axelrod's Tournament */;
+			targetProxy = 8BA44A4218F025EA000F04AD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8BA44A2818F025EA000F04AD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8BA44A2918F025EA000F04AD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8BA44A3118F025EA000F04AD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8BA44A3218F025EA000F04AD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8BA44A4C18F025EA000F04AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		8BA44A4D18F025EA000F04AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8BA44A4F18F025EA000F04AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Axelrod's Tournament/Axelrod's Tournament-Prefix.pch";
+				INFOPLIST_FILE = "Axelrod's Tournament/Axelrod's Tournament-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8BA44A5018F025EA000F04AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Axelrod's Tournament/Axelrod's Tournament-Prefix.pch";
+				INFOPLIST_FILE = "Axelrod's Tournament/Axelrod's Tournament-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		8BA44A5218F025EA000F04AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Axelrod's Tournament.app/Axelrod's Tournament";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Axelrod's Tournament/Axelrod's Tournament-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Axelrod's TournamentTests/Axelrod's TournamentTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		8BA44A5318F025EA000F04AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Axelrod's Tournament.app/Axelrod's Tournament";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Axelrod's Tournament/Axelrod's Tournament-Prefix.pch";
+				INFOPLIST_FILE = "Axelrod's TournamentTests/Axelrod's TournamentTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8BA44A1718F025EA000F04AD /* Build configuration list for PBXProject "Axelrod's Tournament" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BA44A4C18F025EA000F04AD /* Debug */,
+				8BA44A4D18F025EA000F04AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BA44A4E18F025EA000F04AD /* Build configuration list for PBXNativeTarget "Axelrod's Tournament" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BA44A4F18F025EA000F04AD /* Debug */,
+				8BA44A5018F025EA000F04AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BA44A5118F025EA000F04AD /* Build configuration list for PBXNativeTarget "Axelrod's TournamentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BA44A5218F025EA000F04AD /* Debug */,
+				8BA44A5318F025EA000F04AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8B91FDCC18FA9F2F0018F15A /* StrategyModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8B91FDCD18FA9F2F0018F15A /* StrategyModel.xcdatamodel */,
+			);
+			currentVersion = 8B91FDCD18FA9F2F0018F15A /* StrategyModel.xcdatamodel */;
+			path = StrategyModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8BA44A1418F025EA000F04AD /* Project object */;
+}
